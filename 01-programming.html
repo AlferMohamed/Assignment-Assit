@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>01: Programming</title>
+</head>
+
+<body>
+    <div class="container single-assignment">
+
+        <h4>Activity 1</h4>
+        <p>Searching on an array/list is to find a given element on the array and return whether it is found
+            or not and return its position if found. Linear search and binary search are two popular
+            searching algorithms on arrays.
+        </p>
+        <p>1.1 Define what an algorithm is and outline the characteristics of a good algorithm. Develop
+            algorithms for linear search and binary search using Pseudo code.</p>
+        <p>1.2 Describe the steps involved in the process of writing and executing a program. Take an
+            array of 10 or more elements and dry run the above two algorithms. Show the outputs at
+            the end of each iteration and the final output.</p>
+        <p>1.3 Define what Big-O notation is and explain its role in evaluating efficiencies of algorithms.
+            Write the Python program code for the above two algorithms and critically evaluate their
+            efficiencies using Big-O notation.</p>
+
+        <h4>Activity 2</h4>
+        <p>2.1 Define what is meant by a Programming Paradigm. Explain the main characteristics of
+            Procedural , Object oriented and Event-driven paradigms and the relationships among
+            them</p>
+        <p>2.2 Write smallsnippets of code as example for the above three programming paradigms using
+            a suitable programming language(s).</p>
+        <p>2.3 Critically evaluate the code samples that you have above in relation to their structure and
+            the unique characteristics.</p>
+
+        <h4>Activity 3 and Activity 4 are based on the following Scenario.</h4>
+        <p>Ayubo Drive is the transport arm of Ayubo Leisure (Pvt) Ltd, an emerging travel & tour
+            company in Sri Lanka. It owns a fleet of vehicles ranging from cars, SUVs to vans.</p>
+        <p>The vehicles that it owns are hired or rented with or without a driver. The tariffs are based on
+            the vehicle type. Some of the vehicle types that it operates are, small car, sedan car, SVUs, Jeep (WD),
+            7-seater van and Commuter van. New vehicle types are to be added in the future.</p>
+        <p>Vehicle rent and hire options are described below</p>
+        <p>1. Rent (With or without driver) For each type of vehicle rates are given per day, per week
+            and per month. Rate for a driver also given per day. Depending on the rent period the total
+            rent amount needs to be calculated. For example: if a vehicle is rented for 10 days with a
+            driver, total amount to be calculated as follows:</p>
+        <p>Total rent = weeklyRent x 1 + dailyRent x 3 + dailyDriverCost x 10
+        </p>
+        <p>2. Hire (with driver only) These are based on packages such as airport drop, airport pickup,
+            100km per day package, 200km per day package etc. Standard rates are defined for a
+            package type of a vehicle type if that is applicable for that type of vehicle. For each package
+            maximum km limit and maximum number of hours are also defined. Extra km rate is also
+            defined which is applicable if they run beyond the allocated km limit for the tour. For day
+            tours if they exceed max hour limit, a waiting charge is applicable for extra hours. Driver
+            overnight rate and vehicle night park rate also defined which is applicable for each night
+            when the vehicle is hired for 2 or more days.</p>
+
+        <h4>Activity 3</h4>
+        <p>3.1 Design suable algorithms for vehicle tariff calculation for rents and hires</p>
+        <p>Ideally 3 functions should be developed for this purpose as follows:
+        </p>
+        <p>Function 1: Rent calculation.
+            Return the total rent_value when vehicle_no, rented_date, return_date, with_driver
+            parameters are sent in. with_driver parameter is set to true or false depending whether the
+            vehicle is rented with or without driver</p>
+        <p>Function 2: Day tour - hire calculation.
+            Calculate total hire_value when vehicle_no, package_type, start_time, end_time,
+            start_km_reading, end_km_reading parameters are sent in. Should return base_hire_charge,
+            waiting_charge and extra_km_charge as output parameters</p>
+        <p>Function 3: Long tour - hire calculation.
+            Calculate total hire_value when vehicle_no, package_type, start_date, end_date,
+            start_km_reading, end_km_reading parameters are sent in. Should return base_hire_charge,
+            overnight_stay_charge and extra_km_charge as output parameters.</p>
+        <p>3.2 Implement the above algorithms using visual studio IDE (using C#.net) and design the
+            suitable database structure for keeping the tariffs for vehicle types and different packages
+            which must be used for implementing the above functions</p>
+        <p>3.3 Analyze the features of an Integrated Development Environment (IDE) and explain how
+            those features help in application development. Evaluate the use of the Visual Studio
+            IDE for your application development contrasted with not using an IDE.
+        </p>
+
+        <h4>Activity 4</h4>
+        <p>4.1 Design and build a small system to calculate vehicle hire amounts and record them in a
+            database for customer billing and management reporting for Ayubo drive. This includes the
+            completing the database design started in 3.2 and implementing one or more GUIs for
+            vehicle, vehicle type, and package add/edit/delete functions. It essentially requires an
+            interface for hire calculation and recording function described above. Generating customer
+            reports and customer invoices are not required for this course work.</p>
+        <p>4.2 What is debugging an application? Explain the features available in Visual studio IDE for
+            debugging your code more easily. Evaluate how you used the debugging process to develop
+            more secure, robust application with examples.</p>
+        <p>4.3 Explain the coding standards you have used in your application development. Critically
+            evaluate why a coding standard is necessary for the team as well as for the individual.</p>
+
+        <hr>
+
+        <h4>Sample Answere</h4>
+        <h5>Activity 01</h5>
+        <h5>1.1 Define what an algorithm is and outline the characteristics of a good algorithm.
+            Develop algorithms for linear search and binary search using Pseudo code.</h5>
+        <p>The algorithm is a process or formula for solving the problems. It is based on conducting a
+            sequence of specified actions. It is commonly used for data processing, calculation, and other
+            related computer and mathematical operations. In computer programming, by using
+            algorithms we can create functions. Those functions can serve as small programs that can be
+            mention by a larger program.</p>
+        <p>When we think of an algorithm is in the most common way it is not just in regards to
+            computer algorithms are in everywhere. Such as a recipe for making a food is an algorithm.
+            The technique we use to solve the addition or long division problems are an algorithm and
+            the process of folding a shirt or a pair of pants are an also algorithm. Even our morning
+            routine could be considered an algorithm (Techtarget.com, 2018).</p>
+        <p>An example for algorithm to calculate its average and then display the result.</p>
+
+        <a href="./reach-us.html" target="_blank">Read More ....</a>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
