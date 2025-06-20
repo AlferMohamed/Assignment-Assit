@@ -376,7 +376,21 @@ p {
     opacity: 0.6;
 }
 
-/* Responsive */
+/* ............................................ Single Assignment Description Page */
+
+.single-assignment {}
+
+.single-assignment h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.single-assignment p {
+    line-height: 1.9em;
+    margin: 10px 0;
+}
+
+/* ............................................. Responsive */
 @media (max-width: 768px) {
 
     .hero-content,
