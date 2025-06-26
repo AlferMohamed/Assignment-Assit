@@ -385,6 +385,12 @@ p {
     margin-bottom: 10px;
 }
 
+.single-assignment h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
 .single-assignment p {
     line-height: 1.9em;
     margin: 10px 0;
