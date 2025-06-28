@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>04: Database Design Development</title>
+</head>
+
+<body>
+    <div class="container single-assignment">
+        <h4>Assignment Brief and Guidance:</h4>
+        <h4>Case study</h4>
+        <p>You are employed as a Database Developer for a large IT development
+            company. The company has been approached by a transport company called
+            SmartMovers which has grown to a level where need to have an automated
+            system to handle day today operational activities to meet customer demands.
+            You are given the job to design and develop a database solution for
+            SmartMovers to meet their business requirements.</p>
+        <p>The company transports chemical products from one location to another on
+            behalf of registered customers. Customers are of three types namely
+            Catogory1, 2 and 3. Each customer is given a unique customer number and his
+            or her details have to be recorded in the system.</p>
+        <p>Each transport operation is called a job, which involves picking up one or more
+            loads of the products from a customer requested start location and delivers it
+            to a customer requested destination. A unique number is given for each job and
+            for each load when they are created.
+        </p>
+        <p>a driver, assistant, and a container (for carrying the product) A container isfixed
+            to a trailer so it needs to be coupled to a lorry at the start of a Job. (Single
+            container can transport only one chemical product due to safety requirements)
+            Paymentsfor a job depends on customer type, product type (No Risk, High risk)
+            and the load type (small, medium and large). Transport operations are run from
+            9 regional depots. Jobs are allocated to individual depots to service. Depots
+            hold, manage and maintain their own transport units which are permanently
+            allocated to them to service Jobs. Normally transport units are held at the base
+            Depot they belong.</p>
+        <p>The final system should be able to provide the required information for
+            management decision making and to handle daily operations efficiently and
+            effectively.
+        </p>
+
+        <h4>Activity 01</h4>
+        <h5>Activity 1.1</h5>
+        <p>a. Identify the user and system requirements to design a database for the
+            above scenario.</p>
+        <p>b. Identify entities and attributes of the given scenario and design a
+            relational database system using conceptual design (ER Model) by
+            including identifiers (primary Key) of entities and cardinalities,
+            participations of relationships.</p>
+        <p>c. Convert the ER Model into logical database design using relational
+            database model including primary keys foreign keys and referential
+            Integrities. It should contain at least five interrelated tables.</p>
+        <h5>Note:-It is allowed to have your own assumptions and related attributes
+            within the scope of the case study given.
+        </h5>
+
+        <h5>Activity 1.2</h5>
+        <p>a. Explain data normalization with examples. Check whether the provided
+            logical design in task 1.1 is normalised. If not, normalize the database by
+            removing the anomalies.</p>
+        <p>b. Design set of simple interfaces to input and output for the above
+            scenario using Wireframe or any interface-designing tool.</p>
+        <p>c. Explain the validation mechanisms to validate data in the tables with
+            examples.
+        </p>
+
+        <h5>Activity 1.3</h5>
+        <p>a. Check whether the given design (ERD and Logical design) is representing
+            the identified user and system requirementsto access the effectiveness
+            of the design</p>
+
+        <h4>Activity 2</h4>
+        <h5>Activity 2.1</h5>
+        <p>Develop the database system with evidence of user interface, output and data
+            validations, and querying across multiple tables.
+        </p>
+        <p>a. Develop a relational database system according to the ER diagram you
+            have created (Use SQL DDL statements).
+        </p>
+        <p>b. Provide evidence of the use of a suitable IDE to create a simple interface
+            to insert, update and delete data in the database
+        </p>
+        <p>c. Implement the validation methods explained in task 1.2-part c.
+        </p>
+        <p>d. Display the details payment with the job details and the customer
+            details using Join queries</p>
+
+        <h5>Activity 2.2</h5>
+        <p>a. Explain the usage of DML with below mentioned queries by giving at
+            least one single example per each case from the developed database.</p>
+        <p>Select, Update, Delete</p>
+        <h5>Note: - The queries you have selected should be meaningful and relevant to
+            the given scenario.
+        </h5>
+
+        <h5>Activity 2.3</h5>
+        <p>a. Explain how security mechanisms have been used and the importance
+            of these mechanisms for the security of the database. Implement
+            proper security mechanisms (EX: -User groups, access permissions) in
+            the developed database</p>
+
+        <h5>Activity 2.4</h5>
+        <p>a. Explain the usage of the below SQL statements with the examples from
+            the developed database
+        </p>
+        <p>Group by, Order by, Having, Between, Where
+        </p>
+
+        <h4>Activity 3</h4>
+        <h5>Activity 3.1</h5>
+        <p>a. Provide a suitable test plan to test the system against user and system requirements</p>
+        <p>b. Provide relevant test cases for the database you have implemented</p>
+        <h5>Note:- Learner needs to give expected results in a tabular format and screenshots of the actual results with
+            the conclusion</h5>
+
+        <h5>Activity 3.2</h5>
+        <p>a. Explain how the selected test data in task 3.1 b. can be used improve the effectiveness of testing.</p>
+
+        <h5>Activity 3.3</h5>
+        <p>a. Get independent feedback on your database solution from the nontechnical users and some developers (use
+            surveys, questioners, interviews or any other feedback collecting method) and make recommendations and
+            suggestions for improvements in a separate
+            conclusion/recomme dations section</p>
+
+        <h4>Activity 4</h4>
+
+        <h5>Activity 4.1</h5>
+        <p>a. Prepare a simple users' guide and a technical documentation for the support and maintenance of the
+            software.</p>
+
+        <h5>Activity 4.2</h5>
+        <p>a. Your technical documentation should include some of the UML diagrams (Use case diagram Class diagram,
+            etc.), flow charts for the
+            important functionalities, context level DFD and the Level 1 DFD</p>
+
+        <h5>Activity 4.3</h5>
+        <p>a. Suggest the future improvements that may be required to ensure the continued effectiveness of the database
+            system.</p>
+
+        <hr>
+        <h4>Sample Answeres</h4>
+        <h4>Activity 01</h4>
+
+        <h5>Identify the user and system requirements to design a database for above scenario.</h5>
+
+        <h5>User requirements</h5>
+        <p>User requirements are user needs and describe what the user does with the system. Such as what activities
+            users should be able to perform using the system. User requirements are generally used as the primary input
+            for creating system requirements. Requirements should see from user's perspective. (Parker, 2014)</p>
+
+        <h5>System requirements</h5>
+        <p>Detailed description of what the system should do including the software system's functions, services, and
+            operational constraints. The system requirements document (functional specification) should define exactly
+            what is to be implemented. (cs.ccsu.edu, c2022) System requirements are either classified as;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Functional requirements</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Non-functional requirements</p>
+        <p><b>Functional requirements</b> are services the system should provide, how the system should react to
+            particular
+            inputs and how the system should behave in particular situations. May state what the system should not do.
+            Functional requirements specify what a system should do and what a system should not do.</p>
+        <p><b>Non-functional requirements</b> These are basically the quality constraints that the system must satisfy
+            according to the project contract. It doesnt include any functional aspects.</p>
+
+        <h5>User requirement for the scenario</h5>
+        <p>Smart movers is a transport company and want to promote up and need have an automated system to handle day to
+            day activities. The company handles chemical products. The company want to keep records of Customer with
+            Customer category, Products with risk type, Load details with load type, Deriver detail and assistant
+            details. Lorries and containers details, Payment details.</p>
+
+        <a href="./reach-us.html" target="_blank">Read More ....</a>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
