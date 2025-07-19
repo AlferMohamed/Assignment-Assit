@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>19 Data Structures and Algorithms</title>
+</head>
+
+<body>
+    <div class="container single-assignment">
+        <h4>Assignment Brief and Guidance:</h4>
+
+        <h5>Scenario</h5>
+        <p>'XYZ' hotel chain has 100 banquet halls island wide. Any hotel has minimum one banquet hall to maximum 5
+            halls. It provides online hotel banquet hall reservation facilities to their customers. The reservation
+            system uses a waiting list of the selected banquet halls</p>
+        <p>Each banquet hall has unique id, name, location, maximum number guests, reservation date and the three menu
+            prices. Customer can search a banquet hall with the location, reservation date and the number of guests.
+            According to the hotel chain rules and regulations, when a possible match between reservation and the
+            banquet hall is found the customer is contacted via email or SMS and informed. If customer is not responding
+            within a day, he or she is placed back in the waiting list and must wait again for another hall.</p>
+        <p>If customer requested a date change or a location change or a change in number of guests, he or she is placed
+            back in the waiting list and must wait again for another reservation. We will assume that each banquet hall,
+            once accepted, will be occupied by a reservation ID. Insert banquet hall details, reservation details and
+            customer detailsthrough the keyboard. The reservation process should remove a banquet hall on a given date
+            from the queue if the customer “accepts” the reservation. If the customer rejects or changes the reservation
+            delete the customer reservation, insert it to the back of the queue and compare next customer reservation
+            and
+            repeat. This process repeats until all customers complete their reservations.</p>
+
+        <p><b>Task 1:</b>Which data structure can be used, when simulating the above scenario. What are the valid
+            operations
+            that can be carried out on this data structure?
+        </p>
+
+        <p><b>Task 2:</b> Implement the above scenario using the selected data structure and its valid operations for
+            the
+            design specification given in task 1. Use suitable error handling where appropriate. Test the application
+            using suitable test cases and illustrate the system. Provide evidence of the test cases and the test
+            results.
+        </p>
+        <p><b>Task 3:</b> Determine the operations of a memory stack and how it is used to implement function calls
+            related to the above scenario.
+        </p>
+
+        <p><b>Task 4:</b>Sort the banquet hall list and display from the smallest to largest based on the maximum number
+            of seating arrangements that can be done. Sort the banquets halls with two different sorting algorithms and
+            compare the performances of those two algorithms.
+        </p>
+
+        <p><b>Task 5:</b>There are 8 hotels available in the Southern district in Sri Lanka. A customer plans to visit
+            all of these eight hotels through the shortest path within a day. Analyze the operation, using
+            illustrations, of two shortest path algorithms,showing how it operates using a sample graph.</p>
+
+        <p><b>Task 6:</b> Banquet hall details are stored from oldest to newest hall. The customer should be able
+            to find from the newest to the oldest banquet hall added to the hotel chain.
+            Using an imperative definition, specify the abstract data type for the above scenario.
+            Examine the advantages of encapsulation and information hiding when using an ADT selected
+            for the above scenario.
+            Object orientation is a paradigm where a computer program functions by objects calling the
+            Methods of other objects, which ultimately produces program behaviour. It makes programming
+            simple, readable, and makes programs maintainable. Imperative ADTs are basis for object Orientation. Do you
+            agree? Justify your answer.</p>
+
+        <p><b>Task 7:</b>Implement the above scenario using the selected complex ADT. Demonstrate how the implementation
+            of an ADT/algorithm solvesthe above problem. Critically evaluate the complexity of an implemented
+            ADT/algorithm. Determine the different ways in which the efficiency of an algorithm can be measured,
+            illustrating your answer the algorithm which you have developed.
+        </p>
+
+        <p><b>Task 8:</b> Asymptotic analysis can be used to assess the effectiveness of an algorithm. How to use
+            the Asymptotic analysis for the scenario given in task 7?
+            What sort of trade-offs exists when you use a ADT for implementing programs? Describe the
+            benefits of using independent data structures for implementing programs.</p>
+
+        <hr>
+        <h4>Sample Answer</h4>
+        <h5>Task 01</h5>
+
+        <h5>Which data structure can be used, when simulating the above scenario? What are the validoperations that can
+            be carried out on this data structure?
+        </h5>
+
+        <h5>What is Data Structure and algorithms?</h5>
+        <p>Data structures and algorithms are essential components in many computing applications. At
+            the point when developers plan and fabricate applications, they need to model the application
+            information. What this information comprises of relies upon the reason and setting of the
+            application. Be that as it may, it is commonly a prerequisite for any application to embed, alter
+            and query a data store. Data structures offer various approaches to store information things,
+            while the algorithms give strategies to dealing with this information.[ CITATION sue20 \l
+            1033 ]
+        </p>
+
+        <h5>Types of Data structures</h5>
+        <p>
+            <br><b>Array</b>
+            <br>An array is an assortment of homogeneous (same sort) information things put away in
+            contiguous memory locations. For instance if an array is of type “int”, it can just store number
+            components and can't permit the components of different kinds such as double, float, char etc.
+            Array is especially valuable when we are managing parcel of factors of a similar kind. For
+            instance, lets state I need to store the marks in mathematical subject of 50 candidates. To take
+            care of this specific issue, it is possible that I need to make the 50 variables of int type or make
+            a variety of int type with the size 50.
+            <br>Clearly the subsequent choice is ideal, since monitoring all the 50 distinct factors is a hard task.
+            Then again, managing array is straightforward and simple, every one of the 50 vales can be put
+            away in a similar cluster at various files (0 to 49).[ CITATION Cha20 \l 1033 ]
+        </p>
+        <p>
+            <br><b>Stack</b>
+            <br>A stack is the premise of data structure that can be idea like the linear structure depicting a
+            stack or pile, the structure where addition and the deletion of the components happens at the
+            highest point of the stack. The primary thought can be clarified by considering your
+            information a stack plate or set of cards that you can bring down the top component to
+            eliminate things off the stack. This structure is utilized in each part for the programming.
+            [ CITATION tut202 \l 1033 ]
+
+        </p>
+
+        <p>
+            <br><b>Trees</b>
+            <br>Trees are conceptual data structures, used to oversee information in a progressive way, making
+            information recovering considerably more proficient than other data structure techniques. A tree
+            is an assortment of hubs that are directly associated and don't have any cyclic relations. These
+            hubs contain data and are normally masterminded in a key-esteem structure. The key is an
+            identifier for the data, and value is the real information that need to store.[ CITATION stu20 \l
+            1033 ]
+        </p>
+
+        <a href="./reach-us.html" target="_blank">Read More ....</a>
+
+    </div>
+
+</body>
+
+</html>
