@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>20 Advanced Programming</title>
+</head>
+
+<body>
+    <div class="container single-assignment">
+        <h4>Assignment Brief and Guidance:</h4>
+
+        <p>Family Dental Care (FDC) is a leading up market dental surgery located in Kandy. It provides all types of
+            dental treatments to patients which include extractions, nerve fillings, maxillofacial surgeries (i.e.
+            surgeries involving jaw bone) and sophisticated dental implants. It is visited by prominent dentists and
+            dental consultants with post graduate qualifications, some of whom are working at the Faculty of Dental
+            Science at the University of Peradeniya. Patients consult doctors by appointment. On their first visit,
+            patients are required to register by entering their personal details such as name, address, national
+            identity card number and contact number. A small fee is charged from the patient during registration. A
+            separate fee is charged for each treatment given.
+        </p>
+        <p>Doctors too must get registered at FDC by providing personal details such as name, address, date of birth,
+            national ID number and contact number. In addition, consultants must provide the name of their post graduate
+            qualification along with the country of the University that granted it and ordinary dentists should indicate
+            the number of years of experience</p>
+        <p>FDC consists of four fully equipped surgery rooms so that four patients can be accommodated at
+            any given time. FDC also contains a dental scan room which can be attended by one patient at a
+            time. The dental scan machine is operated by one of the dentists of the FDC facility. Normally, a
+            dentist without appointments for a given time slot (say, between 5 PM and 6 PM) is assigned to
+            the machine by the manager. When that time slot finishes, another doctor who is free will be
+            assigned.</p>
+        <p>The staff of FDC is made up of a manager, four nurses (one for each of the four surgery rooms)
+            and a receptionist who handles registrations and appointments.
+        </p>
+        <p>An information system is required to keep track of patients, doctors, appointments, treatments
+            given to patients and payments. The system must also maintain information about the staff. It
+            has been decided to use an object oriented approach to design and implement the system.</p>
+
+        <h5>Task 1</h5>
+        <p>Briefly describe the following Object oriented concepts. Provide diagrams and code snippets to supplement
+            your explanations. (LO 1)
+            <br>Class
+            <br>Object
+            <br>Message
+            <br>Encapsulation
+        </p>
+
+        <h5>Task 2</h5>
+        <p>Design a detailed UML class diagram for the Family Dental Care system. Your solution should
+            demonstrate all three inter-class relationships, namely Association, Inheritance and
+            Aggregation/composition. The classes should include attributes and methods. (LO 2)
+        </p>
+
+        <h5>Task 3</h5>
+        <p>i. Find one occurrence of inheritance (i.e. generalization) from your class diagram and
+            implement it using a suitable object oriented language. Your implementation must cover
+            the super class and at least two sub-classes. (LO 1)
+        </p>
+        <p>ii. Explain the term “Polymorphism”. Demonstrate, with the aid of a code snippet, how
+            polymorphism can be achieved via method redefinition from the “inheritance” code that
+            you have produced in task 3 - (i). (LO 1)
+        </p>
+        <p>iii. Find one occurrence of Aggregation/composition in your class diagram and implement
+            it using a suitable object-oriented language. Your implementation must cover both the
+            “whole” class and component class. Include a main program that demonstrates how
+            components can be instantiated and stored in the whole. Provide screen shots (in
+            addition to source code) as evidence of program execution. (LO 1)</p>
+        <p>iv. At FDC, dentists work at the scan machine in turns. At any given time, a dentist may be
+            either treating a patient or operating the dental scanner. In other words, a doctor plays
+            two roles at FDC: Treating patients and operating Dental Scanner. If we send a
+            getDetails() message to a dentist object, the response varies depending on his/her role at
+            the moment. Which object oriented feature would enable this to be realized? Provide a detailed explanation
+            and supplement it with appropriate UML diagrams. Provide an
+            implementation for the design using a suitable object oriented language. Provide screen
+            shots and source code listing as evidence of program execution. (LO 1) (LO 2).</p>
+
+        <h5>Task 4</h5>
+        <p>i. What is a “Design pattern” ? How are they documented? How would design patterns be useful to computer
+            programmers? (LO 1)
+        </p>
+        <p>ii. FDC owns a very expensive, state of the art dental scan machine (a device far superior
+            to a traditional dental X-ray machine) manufactured by Toshiba, Japan. FDC will be
+            owning just one such machine in the foreseeable future. When modeling and
+            implementing FDC system in software, you must ensure that only one instance of that
+            machine is created. Which design pattern could come to your assistance? Justify your
+            answer. Provide a UML diagram and an implementation for the pattern you have
+            recommended. You may include suitable attributes for the machine such as serial
+            number, make, country of origin and cost. Your implementation should allow the user to
+            enter details of the dental scanner and create the sole instance of that machine. Any
+            attempt to create more than one instance of the scanner must be prevented. Provide
+            screen shots and source code listing as evidence of program execution. (LO 2) (LO 3)
+            (LO 4)
+        </p>
+        <p>iii. The treatments given to patients at FDC can be of two types: elementary and complex.
+            An elementary treatment is a single procedure such as a simple extraction or a dental
+            filling which usually requires a single visit.
+            <br>A complex treatment is a composition of several elementary
+            treatments possibly taking several visits by the patient, for example, a tooth implant for a severely
+            decayed tooth may require an antibiotic treatment for curing any pus accumulation, an extraction of the
+            affected tooth and finally a dental implant of a Titanium tooth. The users of the
+            system (mainly consultants and dentists) wish to handle both of these treatments in a
+            uniform way. For example, the message getDetails() sent to an elementary treatment
+            should provide details of a single procedure while the same message given to a complex
+            treatment would list details of each elementary treatment that make up the complex
+            treatment.
+            <br>Which design pattern is suitable for handling this requirement? Justify your answer.
+            Support your answer with a context specific UML class diagram. Implement your
+            design by using a suitable object oriented language. Provide screen shots as evidence of
+            program execution (in addition to source code listing). (LO 2) (LO 3) (LO 4)
+        </p>
+        <p>iv. Patients who need dental scans are kept in a First In First Out queue. Assume that you
+            have found an already developed Queue container in a software library. It provides
+            standard queue operations to insert and remove data (known as enque and deque
+            respectively). However, you need some specific operations such as search() to look up a
+            particular patient and showAll() to list all the patients in the queue. These additional
+            operations are not provided by the library unit. Which design pattern would enable you
+            to obtain the additional functionality required by the queue? Justify your answer.
+            Supplement your answer with a UML class diagram. Coding is NOT required. (LO 2)
+            (LO 4)</p>
+
+        <hr>
+        <h4>Sample Answers</h4>
+
+        <h5>Task 1
+            <br>Briefly describe the following Object oriented concepts. Provide diagrams and code
+            snippets to supplement your explanations. (LO 1)
+        </h5>
+
+        <p><b>Object Oriented Programming (OOP)</b>
+            <br>Object Oriented Programming (OOP) is a programming concept that works on the principle that
+            objects are the most important part of your program. It allows users to create the objects that they
+            want and then create methods to handle those objects. Manipulating these objects to get results is
+            the goal of Object Oriented Programming.
+            <br>Object Oriented Programming popularly known as OOP, is used in a modern programming
+            language like Java
+        </p>
+        <p>
+            <b>Advantages of OOPS</b>
+            <br>1. OOP offers easy to understand and a clear modular structure for programs.
+            <br>2. Objects created for Object-Oriented Programs can be reused in other programs. Thus it saves
+            significant development cost.
+            <br>3. Large programs are difficult to write, but if the development and designing team follow OOPS concept
+            then they can better design with minimum flaws.
+        </p>
+        <p>
+            <b>1.1 Class</b>
+            A class is a user-defined blueprint or prototype from which objects are created. It represents the
+            set of properties or methods that are common to all objects of one type. In general, class
+            declarations can include these components, in order:
+            <br><b>Modifiers:</b>1. A class can be public or has default access (Refer this for details).
+            <br><b>Class name:</b> The name should begin with an initial letter (capitalized by convention).
+            <br><b>Super class (If any):</b> The name of the class's parent (superclass), if any, preceded by the
+            keyword extends. A class can only extend (subclass) one parent
+            <br><b>Interfaces (If any):</b> nterfaces (if any): A comma-separated list of interfaces implemented by the
+            class, if
+            any, proceeded by the keyword implements. A class can implement more than one
+            interface.
+            <br><b>Class body:</b> The class body, which contains fields, methods, and constructors.
+        </p>
+
+        <a href="./reach-us.html" target="_blank">Read More ....</a>
+
+    </div>
+
+</body>
+
+</html>
